@@ -1,0 +1,10 @@
+$(function(){
+  $('.photos-item').height($('.photos-item').width()/1.6);
+  	$(window).resize(function(){
+  $('.photos-item').height($('.photos-item').width()/1.6);
+  });
+  $('.photos-item_current').height($('.photos-item_current').width()/1.6);
+  	$(window).resize(function(){
+  $('.photos-item_current').height($('.photos-item_current').width()/1.6);
+  });
+});

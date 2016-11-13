@@ -1,0 +1,106 @@
+@import url("../include/fonts/playfair/playfair.css");/*font-family: 'Playfair Display';*/
+@import url("../include/fonts/noto/NotoSerif.css");/*font-family: 'Noto Serif';*/
+@import url("../include/fonts/noto/Noto.css");/*font-family: 'Noto Sans';*/
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+body
+	background #f9f9f9
+	padding 25px 5px
+	@media screen and (min-width: 600px)
+		background #f0f
+  	header
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content: space-between;
+	width 100%
+	margin-bottom 25px
+	h1
+		font-family  'Playfair Display'
+		color #000
+		font-size 26px
+		text-transform uppercase
+		flex-shrink 0
+		margin-bottom -2px
+	.hr
+		width 100%
+		border-bottom 2px solid
+		margin-left 20px
+.photos
+	margin 0 -3px
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	flex-wrap wrap
+	&-item
+		width calc(25% - 6px)
+		margin 3px
+		&_current
+			width 100%
+.ad
+	background #fbf6e8
+	position relative
+	width 100%
+	margin 3px 0
+	&:before
+		content ''
+		display block
+		padding-top 25%
+	&-picture
+		position: absolute;
+		width: 34%;
+		height: 100%;
+		background: url('../include/img/ad-picture.jpg') 0 35%;
+		background-size: 183%;
+		top: 0;
+	p
+		font-size 12px
+		margin-left 40%
+		position absolute
+		font-family 'Noto Sans'
+		bottom 0
+		line-height 21px
+		&.head
+			font-size 13px
+			font-weight 700
+			top 1rem
+			&_semi
+				font-size 10px
+				font-weight 700
+				color #bebebe
+				top 0
+
+li
+	width 34px
+	height 34px
+	text-align center
+	line-height 34px
+.page
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	list-style none
+	margin 3px 0
+	&-number
+		border-radius 50%
+		border 50%
+		cursor pointer
+		&_current
+			background #e6e6e6
+			border-radius 50%
+	& .next
+		width 50%
+		height 34px
+		float right
+		text-align left
+		line-height 34px
+		cursor pointer
